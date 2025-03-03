@@ -10,3 +10,4 @@ gem "awesome_print", require: "ap"
 gem "pry"
 gem "standard", require: false
 gem "fasterer", require: false
+gem "uri", ">= 1.0.3"
