@@ -30,7 +30,7 @@ module EveOnline
     autoload :CorporationAssets, "eve_online/esi/corporation_assets"
     autoload :CorporationAssetsLocations, "eve_online/esi/corporation_assets_locations"
     autoload :CorporationAssetsNames, "eve_online/esi/corporation_assets_names"
-
+    autoload :CorporationWalletJournal, "eve_online/esi/corporation_wallet_journal"
     autoload :CharacterCalendar, "eve_online/esi/character_calendar"
     autoload :CharacterCalendarEvent, "eve_online/esi/character_calendar_event"
 
