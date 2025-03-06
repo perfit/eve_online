@@ -7,7 +7,7 @@ module EveOnline
     class Corporation < Base
       extend Forwardable
 
-      API_PATH = "/v4/corporations/%<corporation_id>s/"
+      API_PATH = "/v5/corporations/%<corporation_id>s/"
 
       attr_reader :corporation_id
 
