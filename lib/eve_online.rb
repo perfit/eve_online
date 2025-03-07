@@ -30,7 +30,6 @@ module EveOnline
     autoload :CorporationAssets, "eve_online/esi/corporation_assets"
     autoload :CorporationAssetsLocations, "eve_online/esi/corporation_assets_locations"
     autoload :CorporationAssetsNames, "eve_online/esi/corporation_assets_names"
-    autoload :CorporationWalletJournal, "eve_online/esi/corporation_wallet_journal"
     autoload :CharacterCalendar, "eve_online/esi/character_calendar"
     autoload :CharacterCalendarEvent, "eve_online/esi/character_calendar_event"
 
@@ -130,7 +129,8 @@ module EveOnline
     autoload :CharacterWallet, "eve_online/esi/character_wallet"
     autoload :CharacterWalletJournal, "eve_online/esi/character_wallet_journal"
     autoload :CharacterWalletTransactions, "eve_online/esi/character_wallet_transactions"
-
+    autoload :CorporationWalletJournal, "eve_online/esi/corporation_wallet_journal"
+    
     autoload :Wars, "eve_online/esi/wars"
     autoload :War, "eve_online/esi/war"
     autoload :WarKillmails, "eve_online/esi/war_killmails"
