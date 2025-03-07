@@ -193,6 +193,15 @@
       "name": "language",
       "type": "string"
     },
+      "division": {
+	  "default": 1,
+	  "description": "Which division of results to return",
+	  "format": "int32"
+	  "in": "query"
+	  "minimum": 1,
+	  "name": "division"
+	  "type": "integer"
+      },
     "page": {
       "default": 1,
       "description": "Which page of results to return",

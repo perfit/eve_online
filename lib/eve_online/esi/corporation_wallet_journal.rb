@@ -4,7 +4,7 @@ module EveOnline
   module ESI
     class CorporationWalletJournal < Base
       API_PATH =
-        "/v4/corporations/%<corporation_id>s/wallet/%<division>/journal/"
+        "/v4/corporations/%<corporation_id>s/wallet/%<division>s/journal/"
 
       attr_reader :corporation_id, :page
 
@@ -12,8 +12,9 @@ module EveOnline
         super
 
         @corporation_id = options.fetch(:corporation_id)
+        @from_id = options.fetch(:from_id, nil)
         @page = options.fetch(:page, 1)
-        @division = options.fetch(:division)
+        @division = options.fetch(:division, 1)
       end
 
       def wallet_journal_entries
@@ -32,11 +33,11 @@ module EveOnline
       end
 
       def additional_query_params
-        [:page, :division]
+        [:from_id, :page, :division]
       end
 
       def path
-        format(API_PATH, corporation_id: corporation_id, division: division)
+        format(API_PATH, corporation_id: corporation_id, division: @division)
       end
     end
   end
