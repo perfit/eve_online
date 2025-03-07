@@ -4,7 +4,7 @@ module EveOnline
   module ESI
     class CorporationWalletJournal < Base
       API_PATH =
-        "/v4/corporations/%<corporation_id>s/wallet/%<division>s/journal/"
+        "/v4/corporations/%<corporation_id>s/wallets/%<division>s/journal/"
 
       attr_reader :corporation_id, :page, :from_id, :division
 
