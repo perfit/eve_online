@@ -6,7 +6,7 @@ module EveOnline
       API_PATH =
         "/v4/corporations/%<corporation_id>s/wallet/%<division>s/journal/"
 
-      attr_reader :corporation_id, :page
+      attr_reader :corporation_id, :page, :from_id, :division
 
       def initialize(options)
         super
