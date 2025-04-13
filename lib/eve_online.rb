@@ -50,6 +50,7 @@ module EveOnline
 
     autoload :Corporation, "eve_online/esi/corporation"
     autoload :CorporationAllianceHistory, "eve_online/esi/corporation_alliance_history"
+    autoload :CorporationContracts, "eve_online/esi/corporation_contracts"
     autoload :CorporationBlueprints, "eve_online/esi/corporation_blueprints"
     autoload :CorporationMembers, "eve_online/esi/corporation_members"
     autoload :CorporationNPC, "eve_online/esi/corporation_npc"
@@ -130,6 +131,7 @@ module EveOnline
     autoload :CharacterWalletJournal, "eve_online/esi/character_wallet_journal"
     autoload :CharacterWalletTransactions, "eve_online/esi/character_wallet_transactions"
     autoload :CorporationWalletJournal, "eve_online/esi/corporation_wallet_journal"
+    autoload :CorporationWalletTransactions, "eve_online/esi/corporation_wallet_transactions"
     
     autoload :Wars, "eve_online/esi/wars"
     autoload :War, "eve_online/esi/war"
