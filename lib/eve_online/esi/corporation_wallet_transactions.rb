@@ -2,8 +2,8 @@
 
 module EveOnline
   module ESI
-    class CharacterWalletTransactions < Base
-      API_PATH = "/v1/corporation/%<character_id>s/wallet/transactions/"
+    class CorporationWalletTransactions < Base
+      API_PATH = "/v1/corporation/%<corporation_id>s/wallet/transactions/"
 
       attr_reader :corporation_id, :from_id
 
