@@ -3,15 +3,16 @@
 module EveOnline
   module ESI
     class CorporationWalletTransactions < Base
-      API_PATH = "/v1/corporation/%<corporation_id>s/wallet/transactions/"
+      API_PATH = "/v1/corporation/%<corporation_id>s/wallet/%<division>s/transactions/"
 
-      attr_reader :corporation_id, :from_id
+      attr_reader :corporation_id, :division, :from_id
 
       def initialize(options)
         super
 
         @corporation_id = options.fetch(:corporation_id)
-        @from_id = options.fetch(:from_id, nil)
+        @division       = options.fetch(:division)
+        @from_id        = options.fetch(:from_id, nil)
       end
 
       def wallet_transactions
@@ -30,11 +31,12 @@ module EveOnline
       end
 
       def additional_query_params
-        [:from_id]
+        [:division, :from_id]
       end
 
       def path
-        format(API_PATH, corporation_id: corporation_id)
+        format(API_PATH, corporation_id: corporation_id,
+               devision: division)
       end
     end
   end
