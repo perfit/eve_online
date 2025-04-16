@@ -36,7 +36,7 @@ module EveOnline
 
       def path
         format(API_PATH, corporation_id: corporation_id,
-               devision: division)
+               division: division)
       end
     end
   end
