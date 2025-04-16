@@ -31,7 +31,7 @@ module EveOnline
       end
 
       def additional_query_params
-        [:division, :from_id]
+        [:from_id]
       end
 
       def path
