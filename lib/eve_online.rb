@@ -120,6 +120,7 @@ module EveOnline
     autoload :UniverseStar, "eve_online/esi/universe_star"
     autoload :UniverseStation, "eve_online/esi/universe_station"
     autoload :UniverseStructures, "eve_online/esi/universe_structures"
+    autoload :UniverseStructure, "eve_online/esi/universe_structure"
     autoload :UniverseSystemJumps, "eve_online/esi/universe_system_jumps"
     autoload :UniverseSystemKills, "eve_online/esi/universe_system_kills"
     autoload :UniverseSystems, "eve_online/esi/universe_systems"
