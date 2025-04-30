@@ -1,16 +1,20 @@
 # frozen_string_literal: true
 
+require "forwardable"
+
 module EveOnline
   module ESI
-    module UniverseStructure < Base
-      API_PATH = "/v2/universe/structure/%<structure_id>s/"
+    class UniverseStructure < Base
+      extend Forwardable
+
+      API_PATH = "/v2/universe/structures/%<structure_id>s/"
 
       attr_reader :structure_id
 
       def initialize(options)
         super
 
-        @structure_id = options.fetch(:corporation_id)
+        @structure_id = options.fetch(:structure_id)
       end
 
       def_delegators :model, :as_json, :name, :owner_id, :solar_system_id,
@@ -27,6 +31,7 @@ module EveOnline
       def path
         API_PATH
       end
+      
     end
   end
 end

@@ -3,7 +3,7 @@
 module EveOnline
   module ESI
     module Models
-      class Structure < Base
+      class UniverseStructure < Base
         def as_json
           {
             name: name,
