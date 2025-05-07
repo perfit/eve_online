@@ -45,12 +45,14 @@ module EveOnline
     autoload :CharacterImplants, "eve_online/esi/character_implants"
 
     autoload :CharacterContracts, "eve_online/esi/character_contracts"
+    autoload :CharacterContractItems, "eve_online/esi/character_contract_items"
     autoload :PublicContracts, "eve_online/esi/public_contracts"
     autoload :PublicContract, "eve_online/esi/public_contract"
 
     autoload :Corporation, "eve_online/esi/corporation"
     autoload :CorporationAllianceHistory, "eve_online/esi/corporation_alliance_history"
     autoload :CorporationContracts, "eve_online/esi/corporation_contracts"
+    autoload :CorporationContractItems, "eve_online/esi/corporation_contract_items"
     autoload :CorporationBlueprints, "eve_online/esi/corporation_blueprints"
     autoload :CorporationMembers, "eve_online/esi/corporation_members"
     autoload :CorporationNPC, "eve_online/esi/corporation_npc"
